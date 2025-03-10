@@ -1,0 +1,78 @@
+# DuelForge Configuration
+# Enable or disable features of the plugin (true = enabled, false = disabled)
+
+duelforge:
+  # Core dueling features
+  duels:
+    enabled: true
+    ranked: true
+    unranked: true
+    modifiers: true
+      # Individual modifier toggles
+    low-gravity: true
+    speed-boost: true
+    no-fall-damage: true
+    one-hit-kills: true
+    regen-boost: true
+
+  # Kit management
+  kits:
+    enabled: true
+    custom-inventory: true
+
+  # Arena management
+  arenas:
+    enabled: true
+    hazards:
+      enabled: true
+      lavarain: true
+      tntshower: true
+      mobspawn: true
+    events:
+      enabled: true
+      suddendeath: true
+      powerup: true
+    templates: true
+    weather: true
+    time: true
+
+  # Queue system
+  queues:
+    enabled: true
+    ranked-queue: true
+    unranked-queue: true
+
+  # Party system
+  parties:
+    enabled: true
+    party-elo: true
+    tournaments: true
+    party-vs-random: true
+
+  # Scoring and stats
+  scoring:
+    enabled: true
+    elo: true
+    stats: true
+    leaderboards: true
+
+  # Spectator mode
+  spectator:
+    enabled: true
+
+  # Replay system
+  replays:
+    enabled: true
+
+  # Cosmetic rewards
+  cosmetics:
+    enabled: true
+    flame-trail: true
+    victory-dance: true
+    legend-tag: true
+
+# General settings
+general:
+  save-stats: true
+  broadcast-duels: true
+  cooldown-seconds: 30

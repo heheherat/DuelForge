@@ -1,0 +1,75 @@
+name: DuelForge
+version: 1.0-SNAPSHOT
+main: com.xai.duelforge.DuelForge
+api-version: 1.13
+description: An advanced dueling plugin with kits, arenas, parties, and more!
+author: xAI
+
+commands:
+  duel:
+    description: Challenge a player to a duel
+    usage: /<command> <player>
+    aliases: [challenge]
+  accept:
+    description: Accept a pending duel request
+    usage: /<command>
+  kits:
+    description: Manage or select kits
+    usage: /<command> [create|delete|save] [name]
+    aliases: [kit]
+  queue:
+    description: Join a ranked or unranked duel queue
+    usage: /<command> <ranked|unranked>
+  party:
+    description: Manage your party
+    usage: /<command> [create|invite|accept|duel|kick|split|tournament] [args]
+    aliases: [p]
+  arena:
+    description: Manage arenas (admin only)
+    usage: /<command> [create|setpos1|setpos2|weather|time|hazard|event|finish|delete|template|list] [args]
+    aliases: [arenas]
+  spectate:
+    description: Spectate an ongoing duel
+    usage: /<command> <player>
+  stats:
+    description: View your duel stats
+    usage: /<command>
+  leaderboard:
+    description: View the Elo leaderboard
+    usage: /<command>
+    aliases: [lb]
+  replay:
+    description: View a duel replay
+    usage: /<command> <replayId>
+  cosmetics:
+    description: Manage your cosmetics
+    usage: /<command>
+
+permissions:
+  duelforge.admin:
+    description: Grants access to admin commands (e.g., kit creation, arena management)
+    default: op
+  duelforge.duel:
+    description: Allows players to initiate duels
+    default: true
+  duelforge.queue:
+    description: Allows players to join queues
+    default: true
+  duelforge.party:
+    description: Allows players to manage parties
+    default: true
+  duelforge.spectate:
+    description: Allows players to spectate duels
+    default: true
+  duelforge.stats:
+    description: Allows players to view stats
+    default: true
+  duelforge.leaderboard:
+    description: Allows players to view the leaderboard
+    default: true
+  duelforge.replay:
+    description: Allows players to view replays
+    default: true
+  duelforge.cosmetics:
+    description: Allows players to use cosmetics
+    default: true
